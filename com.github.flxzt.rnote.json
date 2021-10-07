@@ -15,7 +15,8 @@
         "--share=ipc",
         "--filesystem=xdg-run/gvfsd",
         "--filesystem=xdg-config",
-        "--env=RUST_LOG=rnote=warn"
+        "--env=RUST_LOG=rnote=warn",
+        "--env=GTK_PATH=/app/lib/gtk-4.0"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin"
