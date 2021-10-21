@@ -10,6 +10,7 @@
     "finish-args": [
         "--socket=wayland",
         "--socket=fallback-x11",
+        "--own-name=com.github.flxzt.rnote",
         "--own-name=com.github.flxzt.rnote.*",
         "--device=dri",
         "--share=ipc",
@@ -82,8 +83,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.1.4/rnote-0.1.4.tar.xz",
-                    "sha256": "53c127a6b2d6f8526ced8e4efcf8e7057f990f0541974654bf1317118c16a2cc"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.1.5/rnote-0.1.5.tar.xz",
+                    "sha256": "89edeac4757bb148729b7f337412854d0551f590959c43f87c525238a1939ad1"
                 }
             ]
         }
