@@ -83,8 +83,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.1.5/rnote-0.1.5.tar.xz",
-                    "sha256": "89edeac4757bb148729b7f337412854d0551f590959c43f87c525238a1939ad1"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.1.6/rnote-0.1.6.tar.xz",
+                    "sha256": "c1983904e8ad2a07e4486d31a3cd30f834d92a6955c4593e35222ef11224da23"
                 }
             ]
         }
