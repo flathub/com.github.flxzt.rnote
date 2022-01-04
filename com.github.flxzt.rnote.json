@@ -14,6 +14,8 @@
         "--own-name=com.github.flxzt.rnote.*",
         "--device=dri",
         "--share=ipc",
+        "--socket=pulseaudio",
+        "--filesystem=xdg-run/gvfs",
         "--filesystem=xdg-run/gvfsd",
         "--filesystem=xdg-config",
         "--env=RUST_LOG=rnote=warn",
@@ -99,8 +101,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.2.2/rnote-0.2.2.tar.xz",
-                    "sha256": "67b3078c3f46681abefe8a5473fe4a20f84d1c689cdf713f1f149c0362ad4f2f"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.2.3/rnote-0.2.3.tar.xz",
+                    "sha256": "b003387ab3a3398a3e19aeec3ccfca4ef4b10bd2721dc58e833aeac57e3adb62"
                 }
             ]
         }
