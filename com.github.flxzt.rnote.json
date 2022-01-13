@@ -90,9 +90,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk/4.6/gtk-4.6.0.tar.xz",
-                    "sha256": "782d5951fbfd585fc9ec76c09d07e28e6014c72db001fb567fff217fb96e4d8c"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+                    "commit": "45d6b3ba51d54106076a4f4310c7502f87ee767d"
                 }
             ]
         },
@@ -123,8 +123,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.2.4/rnote-0.2.4.tar.xz",
-                    "sha256": "c8de9b1dcf4ca0239ff39b35d53e2a74d9a93bfa76d572554219b601a72c0d9b"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.2.5/rnote-0.2.5.tar.xz",
+                    "sha256": "f70b7eb8c884fd5d67bc76912a7a9b3b7f8bcc6d9ae4b3918077821e622a6c07"
                 }
             ]
         }
