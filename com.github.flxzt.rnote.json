@@ -123,8 +123,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.0/rnote-0.3.0.tar.xz",
-                    "sha256": "b4a29df9e704ab7ef4f69f960e49e97a48c956ffccd3b522311cdb03cf72c753"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.1/rnote-0.3.1.tar.xz",
+                    "sha256": "5841f28c31d79cfa270bc94dff76c829604c110505ea9a8d092fe09494d74fc8"
                 }
             ]
         }
