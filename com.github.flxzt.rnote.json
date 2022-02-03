@@ -123,7 +123,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.2/rnote-0.3.2.tar.xz",
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.2-hotfix-1/rnote-0.3.2.tar.xz",
                     "sha256": "5deb3d04cb6e1d0ecafe827c8a2bbb78651fcb9442faaf5166d0f8bfbe2f8e4a"
                 }
             ]
