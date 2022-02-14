@@ -17,7 +17,6 @@
         "--filesystem=xdg-documents",
         "--filesystem=xdg-pictures",
         "--filesystem=xdg-desktop",
-        "--filesystem=xdg-download",
         "--filesystem=xdg-run/gvfs",
         "--filesystem=xdg-run/gvfsd",
         "--env=RUST_LOG=rnote=warn",
@@ -139,8 +138,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.4/rnote-0.3.4.tar.xz",
-                    "sha256": "2833dd6480b1751b2fcb564305c3be79cc9704fa58529a949e3ec355af89aa79"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.5/rnote-0.3.5.tar.xz",
+                    "sha256": "c489200bd04fd05b2dd549cbcae37f3533b6352cc751cd534bbc2070f58fd425"
                 }
             ]
         }
