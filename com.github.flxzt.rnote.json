@@ -138,8 +138,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.5-hotfix-3/rnote-0.3.5-hotfix-3.tar.xz",
-                    "sha256": "441accc1eab5600f08f5e3e2a09ca382b67b59fc5abe4cdb640c6adcb39700f6"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.3.5-hotfix-4/rnote-0.3.5-hotfix-4.tar.xz",
+                    "sha256": "70a224fe7145dd340041fe6e24cb99bc83becdae2392375a2b790c6385185e3c"
                 }
             ]
         }
