@@ -67,8 +67,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.5.0/rnote-0.5.0.tar.xz",
-                    "sha256": "28d5ec59996d737dceb7f9acf9284da3d30dc836e25bf40bea2e84864ab3f88a"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.5.0/rnote-0.5.0-hotfix-1.tar.xz",
+                    "sha256": "63a2ce43b33c09e19334dafe41017d87c63b6a9b3be54801f3ae243d82477025"
                 }
             ]
         }
