@@ -66,9 +66,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/untagged-4caab4675620cce91503/rnote-0.5.4-beta1.tar.xz",
-                    "sha256": "a39bfc0a46a0d468968286e44e4479444e795f161d99352f0e56994179a4d52d"
+                    "type": "git",
+                    "url": "https://github.com/flxzt/rnote.git",
+                    "commit": "6e72da4ffa15a2dc5d11d765a7a6771d71b902d1"
                 }
             ]
         }
