@@ -13,7 +13,6 @@
         "--device=dri",
         "--share=ipc",
         "--socket=pulseaudio",
-        "--filesystem=xdg-config",
         "--filesystem=xdg-documents",
         "--filesystem=xdg-pictures",
         "--filesystem=xdg-desktop",
@@ -23,7 +22,11 @@
         "--env=GTK_PATH=/app/lib/gtk-4.0"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin"
+        "append-path": [
+            "/usr/lib/sdk/rust-stable/bin",
+            "/usr/lib/sdk/llvm14/bin"
+        ],
+        "prepend-ld-library-path": "/usr/lib/sdk/llvm14/lib"
     },
     "modules": [
         {
@@ -67,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.5.5/rnote-0.5.5.tar.xz",
-                    "sha256": "6719144c75d5cd8dd761ed39fcae45df8d7075b59d78b65aab2e1a13b20db628"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.5.6-beta1/rnote-0.5.6-beta1.tar.xz",
+                    "sha256": "8bc2561899db10eac4b4137140b3e13100da23f738006d71b2447966dbd6039b"
                 }
             ]
         }
