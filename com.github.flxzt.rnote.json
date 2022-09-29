@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.flxzt.rnote",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -38,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-22.07.0.tar.xz",
-                    "sha256": "420230c5c43782e2151259b3e523e632f4861342aad70e7e20b8773d9eaf3428"
+                    "url": "https://poppler.freedesktop.org/poppler-22.09.0.tar.xz",
+                    "sha256": "d7a8f748211359cadb774ba3e18ecda6464b34027045c0648eb30d5852a41e2e"
                 }
             ]
         },
@@ -67,8 +67,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flxzt/rnote/releases/download/v0.5.4/rnote-0.5.4.tar.xz",
-                    "sha256": "f8dc13dd81a3bec17b61954398ada07fd4cec417b3729222064aa3c2d23f9b69"
+                    "url": "https://github.com/flxzt/rnote/releases/download/v0.5.5/rnote-0.5.5.tar.xz",
+                    "sha256": "6719144c75d5cd8dd761ed39fcae45df8d7075b59d78b65aab2e1a13b20db628"
                 }
             ]
         }
