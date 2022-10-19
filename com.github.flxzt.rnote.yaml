@@ -50,4 +50,4 @@ modules:
       sources:
           - type: archive
             url: "https://github.com/flxzt/rnote/releases/download/v0.5.6-beta1/rnote-0.5.6-beta1.tar.xz"
-            sha256: 8bc2561899db10eac4b4137140b3e13100da23f738006d71b2447966dbd6039b
+            sha256: e80722061da5524cb57a65d419b021d0d3167f6d904936bd5ff6c759015ffb42
