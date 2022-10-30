@@ -26,6 +26,8 @@ modules:
     - name: poppler
       buildsystem: cmake-ninja
       config-opts:
+          - "-DCMAKE_CXX_STANDARD=17"
+          - "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
           - "-DCMAKE_INSTALL_LIBDIR=/app/lib"
           - "-DCMAKE_INSTALL_INCLUDEDIR=/app/include"
           - "-DENABLE_BOOST=OFF"
@@ -49,5 +51,5 @@ modules:
           - "-Dprofile=default"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.5.6/rnote-0.5.6.tar.xz"
-            sha256: f14e97b7dffca20aecada9908cce90ab95333e1d8afe1fe3f392b8c0ba26d54c
+            url: "https://github.com/flxzt/rnote/releases/download/v0.5.7/rnote-0.5.7.tar.xz"
+            sha256: 31b8218696446d9ee6f20d17eaaa7476dbcf5ec9a3abdd7bb39fd64c32dd41f3
