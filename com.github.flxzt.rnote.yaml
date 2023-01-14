@@ -26,14 +26,16 @@ modules:
     - name: poppler
       buildsystem: cmake-ninja
       config-opts:
+          - "-DCMAKE_CXX_STANDARD=17"
+          - "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
           - "-DCMAKE_INSTALL_LIBDIR=/app/lib"
           - "-DCMAKE_INSTALL_INCLUDEDIR=/app/include"
           - "-DENABLE_BOOST=OFF"
           - "-DENABLE_LIBOPENJPEG=none"
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-22.09.0.tar.xz"
-            sha256: d7a8f748211359cadb774ba3e18ecda6464b34027045c0648eb30d5852a41e2e
+            url: "https://poppler.freedesktop.org/poppler-22.12.0.tar.xz"
+            sha256: d9aa9cacdfbd0f8e98fc2b3bb008e645597ed480685757c3e7bc74b4278d15c0
     - name: poppler-data
       buildsystem: cmake-ninja
       config-opts:
@@ -49,5 +51,5 @@ modules:
           - "-Dprofile=default"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.5.6-beta1/rnote-0.5.6-beta1.tar.xz"
-            sha256: e80722061da5524cb57a65d419b021d0d3167f6d904936bd5ff6c759015ffb42
+            url: "https://github.com/flxzt/rnote/releases/download/v0.5.13-beta1/rnote-0.5.13-beta1.tar.xz"
+            sha256: fcf9475dca1ca36a9fb69e56b10afa334b859a353a27be20d665b0343ad34e72
