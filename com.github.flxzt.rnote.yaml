@@ -34,16 +34,16 @@ modules:
           - "-DENABLE_LIBOPENJPEG=none"
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-22.12.0.tar.xz"
-            sha256: d9aa9cacdfbd0f8e98fc2b3bb008e645597ed480685757c3e7bc74b4278d15c0
+            url: "https://poppler.freedesktop.org/poppler-23.02.0.tar.xz"
+            sha256: 3315dda270fe2b35cf1f41d275948c39652fa863b90de0766f6b293d9a558fc9
     - name: poppler-data
       buildsystem: cmake-ninja
       config-opts:
           - "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz"
-            sha256: 2cec05cd1bb03af98a8b06a1e22f6e6e1a65b1e2f3816cb3069bb0874825f08c
+            url: "https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz"
+            sha256: c835b640a40ce357e1b83666aabd95edffa24ddddd49b8daff63adb851cdab74
     - name: rnote
       buildsystem: meson
       run-tests: true
@@ -51,5 +51,5 @@ modules:
           - "-Dprofile=default"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.5.13-beta4/rnote-0.5.13-beta4.tar.xz"
-            sha256: 32dde697fd63ee38a26889bde76c835c0fb74af1b311aad93dbb721a4974e6bc
+            url: "https://github.com/flxzt/rnote/releases/download/v0.5.14-beta1/rnote-0.5.14-beta1.tar.xz"
+            sha256: 27df6e14521c229c74fd4ffa2c5d1f3d6cbec98ce29a7030365be7b8ceb5bf38
