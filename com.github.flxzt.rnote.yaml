@@ -1,10 +1,10 @@
 app-id: com.github.flxzt.rnote
 runtime: org.gnome.Platform
-runtime-version: "43"
+runtime-version: "44"
 sdk: org.gnome.Sdk
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.rust-stable
-    - org.freedesktop.Sdk.Extension.llvm14
+    - org.freedesktop.Sdk.Extension.llvm15
 command: rnote
 finish-args:
     - "--socket=wayland"
@@ -20,13 +20,12 @@ finish-args:
     - "--env=RUST_LOG=rnote=warn"
     - "--env=GTK_PATH=/app/lib/gtk-4.0"
 build-options:
-    append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm14/bin"
-    prepend-ld-library-path: /usr/lib/sdk/llvm14/lib
+    append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm15/bin"
+    prepend-ld-library-path: /usr/lib/sdk/llvm15/lib
 modules:
     - name: poppler
       buildsystem: cmake-ninja
       config-opts:
-          - "-DCMAKE_CXX_STANDARD=17"
           - "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
           - "-DCMAKE_INSTALL_LIBDIR=/app/lib"
           - "-DCMAKE_INSTALL_INCLUDEDIR=/app/include"
@@ -34,8 +33,8 @@ modules:
           - "-DENABLE_LIBOPENJPEG=none"
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-23.02.0.tar.xz"
-            sha256: 3315dda270fe2b35cf1f41d275948c39652fa863b90de0766f6b293d9a558fc9
+            url: "https://poppler.freedesktop.org/poppler-23.04.0.tar.xz"
+            sha256: b6d893dc7dcd4138b9e9df59a13c59695e50e80dc5c2cacee0674670693951a1
     - name: poppler-data
       buildsystem: cmake-ninja
       config-opts:
@@ -51,5 +50,5 @@ modules:
           - "-Dprofile=default"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.5.18/rnote-0.5.18.tar.xz"
-            sha256: 9a5beb5dafdd1d73071c76714b49304fc0acaf62f55bfe570c3d0f8857988f19
+            url: "https://github.com/flxzt/rnote/releases/download/v0.6.0/rnote-0.6.0.tar.xz"
+            sha256: 573423a54f47f0d2b1fdc15f72e7937c31ba4dcddc9d8321a58785451c6c0a9f
