@@ -15,7 +15,7 @@ finish-args:
     - "--filesystem=xdg-documents"
     - "--filesystem=xdg-pictures"
     - "--filesystem=xdg-desktop"
-    - "--filesystem=xdg-run/gvfs"
+    - "--talk-name=org.gtk.vfs.*"
     - "--filesystem=xdg-run/gvfsd"
     - "--env=RUST_LOG=rnote=warn"
     - "--env=GTK_PATH=/app/lib/gtk-4.0"
@@ -31,6 +31,8 @@ modules:
           - "-DCMAKE_INSTALL_INCLUDEDIR=/app/include"
           - "-DENABLE_BOOST=OFF"
           - "-DENABLE_LIBOPENJPEG=none"
+          - "-DENABLE_QT5=OFF"
+          - "-DENABLE_QT6=OFF"
       sources:
           - type: archive
             url: "https://poppler.freedesktop.org/poppler-23.08.0.tar.xz"
@@ -50,5 +52,5 @@ modules:
           - "-Dprofile=default"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.9.0/rnote-0.9.0.tar.xz"
-            sha256: 12ee28a6113badd6609dbe44c82566dbac18347e33fbef663e74c57293452556
+            url: "https://github.com/flxzt/rnote/releases/download/v0.9.1/rnote-0.9.1.tar.xz"
+            sha256: 870d523962c0d205cf7d31b4bfa2ed88f3ce120b30693d7138f79f312ea47aa4
