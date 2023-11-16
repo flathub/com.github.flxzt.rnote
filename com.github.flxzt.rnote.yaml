@@ -52,5 +52,5 @@ modules:
           - "-Dprofile=default"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.9.1/rnote-0.9.1.tar.xz"
-            sha256: 870d523962c0d205cf7d31b4bfa2ed88f3ce120b30693d7138f79f312ea47aa4
+            url: "https://github.com/flxzt/rnote/releases/download/v0.9.2/rnote-0.9.2.tar.xz"
+            sha256: 7e58241045902565ef127f57813c4ca05b8d01a2c8c73ff9633319c4424bfba7
