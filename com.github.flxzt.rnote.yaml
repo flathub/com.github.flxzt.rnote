@@ -33,10 +33,12 @@ modules:
           - "-DENABLE_LIBOPENJPEG=none"
           - "-DENABLE_QT5=OFF"
           - "-DENABLE_QT6=OFF"
+          - "-DENABLE_CPP=OFF"
+          - "-DENABLE_UTILS=OFF"
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-23.12.0.tar.xz"
-            sha256: beba398c9d37a9b6d02486496635e08f1df3d437cfe61dab2593f47c4d14cdbb
+            url: "https://poppler.freedesktop.org/poppler-24.02.0.tar.xz"
+            sha256: 19187a3fdd05f33e7d604c4799c183de5ca0118640c88b370ddcf3136343222e
     - name: poppler-data
       buildsystem: cmake-ninja
       config-opts:
@@ -52,5 +54,5 @@ modules:
           - "-Dprofile=default"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.9.4/rnote-0.9.4.tar.xz"
-            sha256: 1f4b4e21b20122aa5deccaa32ab5ed4b6677b86e920cebc61b3861de65157388
+            url: "https://github.com/flxzt/rnote/releases/download/v0.10.0/rnote-0.10.0.tar.xz"
+            sha256: 592ea4a85a783515b1ff026229183d14e4248718559eb178c86e5104bd5f15cb
