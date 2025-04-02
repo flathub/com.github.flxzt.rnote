@@ -1,10 +1,10 @@
 app-id: com.github.flxzt.rnote
 runtime: org.gnome.Platform
-runtime-version: "46"
+runtime-version: "48"
 sdk: org.gnome.Sdk
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.rust-stable
-    - org.freedesktop.Sdk.Extension.llvm17
+    - org.freedesktop.Sdk.Extension.llvm20
 command: rnote
 finish-args:
     - "--socket=wayland"
@@ -20,8 +20,8 @@ finish-args:
     - "--env=RUST_LOG=rnote=warn"
     - "--env=GTK_PATH=/app/lib/gtk-4.0"
 build-options:
-    append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm17/bin"
-    prepend-ld-library-path: /usr/lib/sdk/llvm17/lib
+    append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin"
+    prepend-ld-library-path: /usr/lib/sdk/llvm20/lib
 modules:
     - name: poppler
       buildsystem: cmake-ninja
