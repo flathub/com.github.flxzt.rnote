@@ -1,10 +1,10 @@
 app-id: com.github.flxzt.rnote
 runtime: org.gnome.Platform
-runtime-version: "46"
+runtime-version: "48"
 sdk: org.gnome.Sdk
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.rust-stable
-    - org.freedesktop.Sdk.Extension.llvm17
+    - org.freedesktop.Sdk.Extension.llvm19
 command: rnote
 finish-args:
     - "--socket=wayland"
@@ -17,11 +17,12 @@ finish-args:
     - "--filesystem=xdg-desktop"
     - "--talk-name=org.gtk.vfs.*"
     - "--filesystem=xdg-run/gvfsd"
-    - "--env=RUST_LOG=rnote=warn"
+    - "--env=RUST_BACKTRACE=1"
+    - "--env=RUST_LOG=rnote=warn,rnote-cli=warn,rnote-engine=warn,rnote-compose=warn"
     - "--env=GTK_PATH=/app/lib/gtk-4.0"
 build-options:
-    append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm17/bin"
-    prepend-ld-library-path: /usr/lib/sdk/llvm17/lib
+    append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm19/bin"
+    prepend-ld-library-path: /usr/lib/sdk/llvm19/lib
 modules:
     - name: poppler
       buildsystem: cmake-ninja
@@ -52,7 +53,8 @@ modules:
       run-tests: true
       config-opts:
           - "-Dprofile=default"
+          - "-Dcli=false"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.11.0/rnote-0.11.0.tar.xz"
-            sha256: 567d30523ef672a18ca33b16442af7b4a93910b47f416d09968dbc0e1d689cc3
+            url: "https://github.com/flxzt/rnote/releases/download/v0.12.0/rnote-0.12.0.tar.xz"
+            sha256: b66037062bf9ee7268bab6c7cace0e04535006136c8c94d9131a51866fdbe062
