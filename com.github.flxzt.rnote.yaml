@@ -38,8 +38,8 @@ modules:
           - "-DENABLE_UTILS=OFF"
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-24.07.0.tar.xz"
-            sha256: 19eb4f49198e4ae3fd9e5a6cf24d0fc7e674e8802046a7de14baab1e40cc2f1d
+            url: "https://poppler.freedesktop.org/poppler-25.09.1.tar.xz"
+            sha256: 0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658
     - name: poppler-data
       buildsystem: cmake-ninja
       config-opts:
@@ -56,5 +56,5 @@ modules:
           - "-Dcli=false"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.12.0/rnote-0.12.0.tar.xz"
-            sha256: b66037062bf9ee7268bab6c7cace0e04535006136c8c94d9131a51866fdbe062
+            url: "https://github.com/flxzt/rnote/releases/download/v0.13.0/rnote-0.13.0.tar.xz"
+            sha256: 87a2d70752e0c0414eab13323cf436e407411c8ed2d3ec2fd4acad0a3e13aecf
