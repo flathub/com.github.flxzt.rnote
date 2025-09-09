@@ -56,5 +56,5 @@ modules:
           - "-Dcli=false"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.13.0/rnote-0.13.0.tar.xz"
-            sha256: 87a2d70752e0c0414eab13323cf436e407411c8ed2d3ec2fd4acad0a3e13aecf
+            url: "https://github.com/flxzt/rnote/releases/download/v0.13.1/rnote-0.13.1.tar.xz"
+            sha256: 843eae70ebdbbb4f417225771ce1086752fcb29ccf8bbb77296abae042d24759
