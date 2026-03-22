@@ -1,60 +1,60 @@
 app-id: com.github.flxzt.rnote
 runtime: org.gnome.Platform
-runtime-version: "48"
+runtime-version: "50"
 sdk: org.gnome.Sdk
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.rust-stable
-    - org.freedesktop.Sdk.Extension.llvm19
+    - org.freedesktop.Sdk.Extension.llvm20
 command: rnote
 finish-args:
-    - "--socket=wayland"
-    - "--socket=fallback-x11"
-    - "--device=dri"
-    - "--share=ipc"
-    - "--socket=pulseaudio"
-    - "--filesystem=xdg-documents"
-    - "--filesystem=xdg-pictures"
-    - "--filesystem=xdg-desktop"
-    - "--talk-name=org.gtk.vfs.*"
-    - "--filesystem=xdg-run/gvfsd"
-    - "--env=RUST_BACKTRACE=1"
-    - "--env=RUST_LOG=rnote=warn,rnote-cli=warn,rnote-engine=warn,rnote-compose=warn"
-    - "--env=GTK_PATH=/app/lib/gtk-4.0"
+    - --socket=wayland
+    - --socket=fallback-x11
+    - --device=dri
+    - --share=ipc
+    - --socket=pulseaudio
+    - --filesystem=xdg-documents
+    - --filesystem=xdg-pictures
+    - --filesystem=xdg-desktop
+    - --talk-name=org.gtk.vfs.*
+    - --filesystem=xdg-run/gvfsd
+    - --env=RUST_BACKTRACE=1
+    - --env=RUST_LOG=rnote=warn,rnote-cli=warn,rnote-engine=warn,rnote-compose=warn
+    - --env=GTK_PATH=/app/lib/gtk-4.0
 build-options:
-    append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm19/bin"
-    prepend-ld-library-path: /usr/lib/sdk/llvm19/lib
+    append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin
+    prepend-ld-library-path: /usr/lib/sdk/llvm20/lib
 modules:
     - name: poppler
       buildsystem: cmake-ninja
       config-opts:
-          - "-DCMAKE_POSITION_INDEPENDENT_CODE=ON"
-          - "-DCMAKE_INSTALL_LIBDIR=/app/lib"
-          - "-DCMAKE_INSTALL_INCLUDEDIR=/app/include"
-          - "-DENABLE_BOOST=OFF"
-          - "-DENABLE_LIBOPENJPEG=none"
-          - "-DENABLE_QT5=OFF"
-          - "-DENABLE_QT6=OFF"
-          - "-DENABLE_CPP=OFF"
-          - "-DENABLE_UTILS=OFF"
+          - -DCMAKE_POSITION_INDEPENDENT_CODE=ON
+          - -DCMAKE_INSTALL_LIBDIR=/app/lib
+          - -DCMAKE_INSTALL_INCLUDEDIR=/app/include
+          - -DENABLE_BOOST=OFF
+          - -DENABLE_LIBOPENJPEG=none
+          - -DENABLE_QT5=OFF
+          - -DENABLE_QT6=OFF
+          - -DENABLE_CPP=OFF
+          - -DENABLE_UTILS=OFF
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-25.09.1.tar.xz"
+            url: https://poppler.freedesktop.org/poppler-25.09.1.tar.xz
             sha256: 0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658
     - name: poppler-data
       buildsystem: cmake-ninja
       config-opts:
-          - "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+          - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       sources:
           - type: archive
-            url: "https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz"
+            url: https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
             sha256: c835b640a40ce357e1b83666aabd95edffa24ddddd49b8daff63adb851cdab74
     - name: rnote
       buildsystem: meson
       run-tests: true
       config-opts:
-          - "-Dprofile=default"
-          - "-Dcli=false"
+          - -Dprofile=default
+          - -Dcli=false
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.13.1/rnote-0.13.1.tar.xz"
+            url: https://github.com/flxzt/rnote/releases/download/v0.13.1/rnote-0.13.1.tar.xz
             sha256: 843eae70ebdbbb4f417225771ce1086752fcb29ccf8bbb77296abae042d24759
