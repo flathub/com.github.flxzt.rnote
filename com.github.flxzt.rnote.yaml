@@ -30,5 +30,5 @@ modules:
           - "-Dcli=true"
       sources:
           - type: archive
-            url: "https://github.com/flxzt/rnote/releases/download/v0.14.0/rnote-0.14.0.tar.xz"
-            sha256: 1a55a95b3c87f0f99633cfbeb2f75bb4d4a174cb5f862ce651bf9bc15de7516c
+            url: "https://github.com/flxzt/rnote/releases/download/v0.14.1/rnote-0.14.1.tar.xz"
+            sha256: 734f1cf7071c08eb55c08a9e0c5d03539e0403e281a4f64f5d3bcdfd254b3f4c
